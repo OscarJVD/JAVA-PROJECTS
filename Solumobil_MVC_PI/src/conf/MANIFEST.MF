@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Main-Class: package.myMainClassName
+MyProject.jar
+
+    Manifest.MF
+         Main-Class: mainClassFolder.Mainclass
+
+    mainClassFolder
+         Mainclass.class
+
+    packageFolder
+         IamUselessWithoutMain.class
+

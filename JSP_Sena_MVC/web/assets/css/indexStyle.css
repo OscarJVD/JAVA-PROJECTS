@@ -1,0 +1,84 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26/06/2020, 11:32:54 PM
+    Author     : PC-Vargas
+*/
+
+.texto-blanco{
+    color: white !important; 
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+body {
+
+  background: -webkit-radial-gradient(center, #dc143c, #580818);
+  background: -moz-radial-gradient(center, #dc143c, #580818);
+  background: -o-radial-gradient(center, #dc143c, #580818);
+  background: -ms-radial-gradient(center, #dc143c, #580818);
+  background: radial-gradient(center, #dc143c, #580818);
+}
+
+.navIndex{
+    margin-bottom: 1rem;
+}
+
+.slashed {
+  
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+}
+.slashed .top,
+.slashed .bot {
+  text-align: center;
+  font: 62px/100px arial;
+  text-transform: uppercase;
+  text-align: center;
+  overflow: hidden;
+  color: #fff;
+}
+.slashed .top:before,
+.slashed .bot:before {
+  content: attr(title);
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+.slashed .top {
+  
+  top: 0;
+  left: 5px;
+  right: 0;
+  bottom: 50%;
+}
+.slashed .top:before {
+  
+  bottom: -50px;
+  left: 0;
+  right: 0;
+}
+.slashed .bot {
+  
+  top: 50%;
+  left: 0;
+  right: 5px;
+  bottom: 0;
+}
+.slashed .bot:before {
+  
+  top: -50px;
+  left: 0;
+  right: 0;
+}

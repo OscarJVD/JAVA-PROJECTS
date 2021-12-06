@@ -1,0 +1,31 @@
+SMAP
+consultarVehiculo_jsp.java
+JSP
+*S JSP
+*F
++ 0 consultarVehiculo.jsp
+consultarVehiculo.jsp
++ 1 Sesiones.jsp
+Sesiones.jsp
++ 2 Footer.jsp
+Footer.jsp
+*L
+5,8:53
+5#1,9:60
+13,134:69
+12#0,19:202
+31:221,3
+32:224
+33:225,3
+34:228
+35:229,3
+36,16:232
+52,8:249
+59,2:257
+61,7:259,3
+68:280
+69:281,3
+70,6:284
+5#2,19:289
+75#0,19:307
+*E

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--1. CREACIÓN DE UN POOL DE CONEXIONES-->
+<context>
+    <Resource name="jdbc/servicio" auth="Container" type="javax.sql.Datasource" 
+              maxActive="15" maxIdle="3" maxWait="5000" username="root" password=""
+              driverClassName="com.mysql.jdbc.Driver" url="jdbc:mysql://localhost:3306/solumobil">
+          
+    </Resource>
+</context>

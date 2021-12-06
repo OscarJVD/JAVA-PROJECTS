@@ -1,0 +1,27 @@
+create database if not exists loginjava19;
+use loginjava19;
+create table if not exists dborol(
+id_rol int not null primary key auto_increment,
+rol varchar(45) not null
+)engine InnoDB;
+insert into dborol (rol) values ('admin'),('vendedor');
+create table if not exists dbopersona(
+id_persona int not null primary key auto_increment,
+nombre varchar(45) not null,
+apellido varchar(45) not null,
+id_rol int,
+constraint fk_rol foreign key (id_rol) references dborol(id_rol) on delete cascade on update cascade
+)engine InnoDB;
+insert into dbopersona (nombre, apellido,id_rol) values ('Jose','Mena',1),('Jose2','Mena2',2);
+create table if not exists dbouser(
+id_user int not null primary key  auto_increment,
+usuario varchar(45) not null,
+pass varchar(45) not null,
+id_persona int not null,
+constraint fk_persona foreign key(id_persona) references dbopersona(id_persona) on delete cascade on update cascade
+)engine InnoDB;
+insert into dbouser (usuario,pass,id_persona) values ('admin','2019',1),('venta','2019',2);
+
+select count(usuario) conta from dbouser where usuario = 'admi3n';
+
+select p.nombre,p.apellido,r.rol from dbouser u inner join dbopersona p on u.id_persona = p.id_persona inner join dborol r on p.id_rol = r.id_rol where u.usuario = 'admin' and u.pass = '2019'

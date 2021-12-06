@@ -1,0 +1,7 @@
+DAO\test.class
+Entity\Persona.class
+Entity\Rol.class
+DAO\Conexion.class
+Controller\control.class
+DAO\userDAO.class
+Entity\Usuario.class
